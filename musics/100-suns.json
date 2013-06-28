@@ -1,0 +1,81 @@
+{
+	"lirics":[
+
+		{
+			"line" : "I believe in nothing,",
+			"delay": 0
+		},
+		{
+			"line" : "Not the end and not the start",
+			"delay": 5000
+		},
+		{
+			"line" : "I believe in nothing,",
+			"delay": 12000
+		},
+		{
+			"line" : "Not the Earth and not the stars",
+			"delay": 17000
+		},
+		{
+			"line" : "I believe in nothing",
+			"delay": 24000
+		}
+		,
+		{
+			"line" : "Not the day and not the dark",
+			"delay": 29000
+		},
+		{	
+			"line" : "I believe in nothing,",
+			"delay": 36000	
+		},
+		{	
+			"line" : "But the beating of our hearts",
+			"delay": 41200	
+		},
+		{	
+			"line" : "I believe in nothing,",
+			"delay": 48000	
+		},
+		{	
+			"line" : "One hundred suns until we part",
+			"delay": 53000	
+		},
+		{	
+			"line" : "I believe in nothing,",
+			"delay": 60000	
+		},
+		{	
+			"line" : "Not in Satan, not in God",
+			"delay": 65000	
+		},
+		{	
+			"line" : "I believe in nothing,",
+			"delay": 72000	
+		},
+		{	
+			"line" : "Not in peace and not in war",
+			"delay": 77000	
+		},
+		{	
+			"line" : "I believe in nothing,",
+			"delay": 84000	
+		},
+		{	
+			"line" : "But the truth of who we are",
+			"delay": 89000	
+		},
+		{	
+			"line" : " ",
+			"delay": 94000	
+		}
+	]
+}
+
+
+
+
+
+
+
