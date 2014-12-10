@@ -116,7 +116,7 @@ function TextNode(config){
 	this.draw = function(ctx){		
 		Drawable.prototype.draw.call(this, ctx);
 	};		
-	this.position = {x:px,y:py }
+	this.position = {x:px,y:py };
 }
 TextNode.prototype = Object.create(Drawable.prototype);
 
@@ -131,40 +131,40 @@ function Timeline(tempo){
             var that = this;
 
           	this.addKeyframe = function(tempo,callback){
-                this.keyframes.push({time: tempo, fn: callback, ex:false})
+                this.keyframes.push({time: tempo, fn: callback, ex:false});
             }
          
             this.start = function(){
                 for (x in this.keyframes) {
-                    setTimeout(this.keyframes[x].fn,this.keyframes[x].time)
+                    setTimeout(this.keyframes[x].fn,this.keyframes[x].time);
                 }
 
             }
             this.stop = function(){
-                clearInterval(this.interval)
-                console.log("Timeline parada.")
+                clearInterval(this.interval);
+                console.log("Timeline parada.");
             }
 
 }
 
 function Musica(){
 	Timeline.call(this);
-	mp3 = document.getElementById("mp3Music")
-	that = this
+	mp3 = document.getElementById("mp3Music");
+	that = this;
 	this.start = function(){
 		setInterval(function(){
 			var tempo = Math.round(mp3.currentTime*1000)
 			$(that.keyframes).each(function(key,data){
 				if(tempo >= data.time && !data.ex){
-					data.fn()
-					data.ex = true
-					console.log(data.time, tempo)
+					data.fn();
+					data.ex = true;
+					console.log(data.time, tempo);
 				}
 
 			})
 		},1)
    
-		mp3.play()
+		mp3.play();
 
     }
 		// timeline.start(0)
@@ -179,7 +179,7 @@ function getJson(url){
 	ctx = canvas.getContext("2d");
 	
 	$.getJSON(url,function(data){
-		var mus = new Musica()
+		var mus = new Musica();
 		
 
 		$(data.lirics).each(function(key,dt){
@@ -198,18 +198,18 @@ function getJson(url){
 				});
 				scene.init();
 			}
-			mus.addKeyframe(dt.delay,fn)
+			mus.addKeyframe(dt.delay,fn);
 
 
 		})
-			mus.start()
-		console.log('mus')
+			mus.start();
+		console.log('mus');
 	})
 
 	
 }
 window.onload = function(){
 
-	getJson('musics/100-suns.json')
+	getJson('assets/musics/100-suns.json');
 	
 };
